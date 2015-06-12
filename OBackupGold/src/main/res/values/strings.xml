@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">0 Backup Gold</string>
+    <string name="about_title">About 0 Backup Gold 2.8</string>
+    <string name="about_text">(C) 2011 Javier Sedano\n0backup@0droid.com\nwww.0droid.com/0backup</string>
+    <string name="about_button">Ok</string>
+    <string name="backup_scheduling">Scheduling settings</string>
+    <string name="scheduled_doc">Fill in the data and click \'Done\'.\nFind the full manual at http://www.0droid.com/0backup</string>
+    <string name="scheduled_enable">Enable scheduled backup</string>
+    <string name="scheduled_daysL">Do backup every</string>
+    <string name="scheduled_daysL2">days at:</string>
+    <string name="scheduled_wifion">Automatically turn on WiFi for backup</string>
+    <string name="scheduled_onlywifi">Only with WiFi</string>
+    <string name="scheduled_ssidL">Only in the following WiFi network (empty for \'all\'):</string>
+    <string name="scheduled_current">Use current</string>
+    <string name="scheduled_done">Done</string>
+    <string name="scheduled_plugged">You may also want to check \'Plugged only\' under \'General settings\'"</string>
+    <string name="notification_fatalerror">Fatal error. Please, report a bug.</string>
+    <string name="notification_nowifi">No WiFi available. Delaying backup.</string>
+    <string name="notification_nossid"> not available. Delaying backup.</string>
+
+</resources>

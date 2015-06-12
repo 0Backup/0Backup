@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="internalOnly"
+    package="com.Odroid.ObackupGold"
+    android:versionCode="21"
+    android:versionName="2.8" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity android:name=".OBackupGold" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.Odroid.ObackupCore.OBackupCoreServer" />
+        <activity android:name="com.Odroid.ObackupCore.OBackupCoreExclude" />
+        <activity android:name="com.Odroid.ObackupCore.OBackupCoreExcludeBrowser" />
+        <activity android:name="com.Odroid.ObackupCore.OBackupCorePreferences" />
+        <activity android:name=".OBackupGoldScheduling" />
+        
+        <service
+            android:name="com.Odroid.ObackupCore.OBackupCoreService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" />
+
+        <receiver android:name=".OBackupGoldAlarmReceiver" />
+        <receiver android:name=".OBackupGoldBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

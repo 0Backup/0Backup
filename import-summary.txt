@@ -1,0 +1,72 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From OBackupCore:
+* _proguard.cfg
+From OBackupGold:
+* 0BackupGold_manual.launch
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In OBackupCore:
+* AndroidManifest.xml => OBackupCore\src\main\AndroidManifest.xml
+* assets\ => OBackupCore\src\main\assets
+* lint.xml => OBackupCore\lint.xml
+* res\ => OBackupCore\src\main\res\
+* src\ => OBackupCore\src\main\java\
+* src\com\Odroid\ObackupCore\OBackupCoreServiceInterface.aidl => OBackupCore\src\main\aidl\com\Odroid\ObackupCore\OBackupCoreServiceInterface.aidl
+* src\jcifs\dcerpc\DcerpcHandle.java.0 => OBackupCore\src\main\resources\jcifs\dcerpc\DcerpcHandle.java.0
+* src\jcifs\dcerpc\msrpc\lsarpc.idl => OBackupCore\src\main\resources\jcifs\dcerpc\msrpc\lsarpc.idl
+* src\jcifs\dcerpc\msrpc\netdfs.idl => OBackupCore\src\main\resources\jcifs\dcerpc\msrpc\netdfs.idl
+* src\jcifs\dcerpc\msrpc\samr.idl => OBackupCore\src\main\resources\jcifs\dcerpc\msrpc\samr.idl
+* src\jcifs\dcerpc\msrpc\srvsvc.idl => OBackupCore\src\main\resources\jcifs\dcerpc\msrpc\srvsvc.idl
+* src\jcifs\dcerpc\rpc.idl => OBackupCore\src\main\resources\jcifs\dcerpc\rpc.idl
+* src\jcifs\smb\BufferCache.jav => OBackupCore\src\main\resources\jcifs\smb\BufferCache.jav
+* src\jcifs\smb\SmbComCheckDirectory.jav => OBackupCore\src\main\resources\jcifs\smb\SmbComCheckDirectory.jav
+* src\jcifs\smb\SmbComEcho.jav => OBackupCore\src\main\resources\jcifs\smb\SmbComEcho.jav
+* src\jcifs\smb\SmbComEchoResponse.jav => OBackupCore\src\main\resources\jcifs\smb\SmbComEchoResponse.jav
+* src\jcifs\util\mime.map => OBackupCore\src\main\resources\jcifs\util\mime.map
+In OBackupGold:
+* AndroidManifest.xml => OBackupGold\src\main\AndroidManifest.xml
+* assets\ => OBackupGold\src\main\assets
+* proguard.cfg => OBackupGold\proguard.cfg
+* res\ => OBackupGold\src\main\res\
+* src\ => OBackupGold\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

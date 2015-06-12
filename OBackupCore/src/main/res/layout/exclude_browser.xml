@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/excludebrowser_done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="excludebrowser_done"
+        android:text="@string/exclude_done" />
+
+    <TextView
+        android:id="@+id/excludebrowser_dir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="XXXXX"
+        android:textColor="#ffFFE877" />
+
+    <ListView
+        android:id="@+id/excludebrowser_list"
+        android:layout_width="fill_parent"
+        android:dividerHeight="2dp"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+        <!-- Preview: 
+            listitem=@layout/exclude_browser_listitem
+         -->
+    </ListView>
+
+</LinearLayout>

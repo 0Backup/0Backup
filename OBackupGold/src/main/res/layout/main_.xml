@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+>
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    >
+      <Button
+        android:id="@+id/backup_now"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="@string/backup_now"
+        android:onClick="backup_now" />
+      <Button
+        android:id="@+id/backup_stop"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="@string/backup_stop"
+        android:onClick="backup_stop" />
+    </LinearLayout>
+    <TextView
+      android:id="@+id/backup_status"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:editable="false" />
+    <Button
+      android:id="@+id/backup_server"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/backup_server"
+      android:onClick="backup_server" />
+    <Button
+      android:id="@+id/backup_scheduling"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/backup_scheduling"
+      android:onClick="backup_scheduling" />
+    <Button
+      android:id="@+id/backup_exclude"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/backup_exclude"
+      android:onClick="backup_exclude" />
+    <Button
+      android:id="@+id/backup_settings"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/backup_settings"
+      android:onClick="backup_settings" />
+    <TextView
+      android:id="@+id/scheduled_doc"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/backup_doc"
+      android:autoLink="web"
+      android:editable="false" />
+  </LinearLayout>
+</ScrollView>

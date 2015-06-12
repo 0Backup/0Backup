@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/exclude_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:editable="false"
+            android:text="@string/exclude_doc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/exclude_browse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="exclude_browse"
+                android:text="@string/exclude_browse" />
+
+            <Button
+                android:id="@+id/exclude_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="exclude_done"
+                android:text="@string/exclude_done" />
+        </LinearLayout>
+
+            <ListView
+        android:id="@+id/exclude_list"
+        android:layout_width="fill_parent"
+        android:dividerHeight="2dp"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+        <!-- Preview: 
+            listitem=@layout/exclude_listitem
+         -->
+    </ListView>
+
+    </LinearLayout>
+

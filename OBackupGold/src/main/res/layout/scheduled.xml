@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+>
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+    <TextView
+      android:id="@+id/scheduled_doc"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/scheduled_doc"
+      android:autoLink="web"
+      android:editable="false" />
+    <CheckBox
+      android:id="@+id/scheduled_enable"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/scheduled_enable" />
+    <LinearLayout
+      android:id="@+id/scheduled_enabledChildren"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    >
+      <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <TextView
+          android:id="@+id/scheduled_daysL"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="@string/scheduled_daysL"
+          android:paddingRight="5sp"
+          android:editable="false" />
+        <EditText
+          android:id="@+id/scheduled_days"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:minWidth="35sp"
+          android:paddingLeft="10sp"
+          android:paddingRight="10sp"
+          android:numeric="integer"
+          android:editable="true" />
+        <TextView
+          android:id="@+id/scheduled_daysL2"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="@string/scheduled_daysL2"
+          android:paddingLeft="5sp"
+          android:editable="false" />
+      </LinearLayout>
+      <TimePicker
+        android:id="@+id/scheduled_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+      <CheckBox
+        android:id="@+id/scheduled_wifion"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/scheduled_wifion" />
+      <CheckBox
+        android:id="@+id/scheduled_onlywifi"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/scheduled_onlywifi" />
+      <LinearLayout
+        android:id="@+id/scheduled_onlywifiChildren"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <TextView
+          android:id="@+id/scheduled_ssidL"
+          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:text="@string/scheduled_ssidL"
+          android:editable="false" />
+        <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        >
+          <EditText
+            android:id="@+id/scheduled_ssid"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:editable="true" />
+          <Button
+            android:id="@+id/scheduled_current"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/scheduled_current"
+            android:onClick="scheduled_current" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+    <Button
+      android:id="@+id/scheduled_done"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/scheduled_done"
+      android:onClick="scheduled_done" />
+  </LinearLayout>
+</ScrollView>

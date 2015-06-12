@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/server_scroll"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+>
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+    <TextView
+      android:id="@+id/server_doc"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/server_doc"
+      android:autoLink="web"
+      android:editable="false" />
+    <TextView
+      android:id="@+id/server_serverL"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/server_serverL"
+      android:editable="false" />
+    <EditText
+      android:id="@+id/server_server"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:editable="true" />
+    <TextView
+      android:id="@+id/server_userlL"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/server_userL"
+      android:editable="false" />
+    <EditText
+      android:id="@+id/server_user"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:editable="true" />
+    <TextView
+      android:id="@+id/server_domainL"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/server_domainL"
+      android:editable="false" />
+    <EditText
+      android:id="@+id/server_domain"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:editable="true" />
+    <TextView
+      android:id="@+id/server_passwordL"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/server_passwordL"
+      android:editable="false" />
+    <EditText
+      android:id="@+id/server_password"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:password="true"
+      android:editable="true" />
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    >
+      <Button
+        android:id="@+id/server_browseServer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="@string/server_browseServer"
+        android:onClick="server_browseServer" />
+      <Button
+        android:id="@+id/server_done"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="@string/server_done"
+        android:onClick="server_done" />
+    </LinearLayout>
+    <TextView
+      android:id="@+id/server_pathL"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/server_pathL"
+      android:editable="false" />
+    <EditText
+      android:id="@+id/server_path"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:editable="true" />
+      <ProgressBar
+      android:id="@+id/server_progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      />
+    <LinearLayout
+      android:id="@+id/server_list"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="5px"
+      android:paddingBottom="5px"
+      android:paddingLeft="5px"
+      android:paddingRight="5px"
+          >
+    </LinearLayout>
+    <Button
+      android:id="@+id/server_done2"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="@string/server_done"
+      android:onClick="server_done" />
+  </LinearLayout>
+</ScrollView>

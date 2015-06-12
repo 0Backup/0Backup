@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">0 Backup Core</string>
+
+    <string name="web">http://www.0droid.com</string>
+    <string name="market">market://search?q=pub:0droid</string>
+
+    <string name="menu_about">About</string>
+    <string name="menu_web">Web</string>
+    <string name="menu_market">More apps</string>
+
+    <string name="about_title">About 0 Backup 2.8</string>
+    <string name="about_text">(C) 2011 Javier Sedano\n0backup@0droid.com\nwww.0droid.com/0backup</string>
+    <string name="about_button">Ok</string>
+
+    <string name="bug">Bug found. Please, report it.</string>
+    <string name="noservice">Unable to connect to service. Application must be closed.</string>
+    <string name="noservice_ok">Ok</string>
+    <string name="nullservice">Unable to connect to service. Will keep trying...</string>
+    
+    <string name="backup_now">Backup now</string>
+    <string name="backup_stop">Stop backup</string>
+    <string name="backup_stopping">Stopping. This may take a while.</string>
+    <string name="backup_server">Server settings</string>
+    <string name="backup_scheduling">Scheduling settings (Gold only)</string>
+    <string name="backup_exclude">Exclude list</string>
+    <string name="backup_settings">General settings</string>
+    <string name="backup_doc">Find the full manual at http://www.0droid.com/0backup</string>
+    <string name="backup_noexclude">No folder where excluded.\nNotice that backup may take long (around 1 hour for each GB to be copied), so you probably want to exclude some large folders (for example, your music or so).\nDo you really want to proceed?</string>
+    <string name="backup_nowifi">No WiFi available.\nNotice that backup may fail, take long and use a lot of mobile data.\nDo you really want to proceed?</string>
+    <string name="backup_unplugged">Device unpplugged.\nDoing the backup on battery takes longer, drains the battery and fails more frequently.\nDo you really want to proceed?</string>
+    <string name="backup_yes">Yes</string>
+    <string name="backup_no">No</string>
+
+    <string name="prefs_delete">Remove on server</string>
+    <string name="prefs_delete_summary">Remove items on server when not in the SD card</string>
+    <string name="prefs_abort">Abort on error</string>
+    <string name="prefs_abort_summary">If there in a error, do not try to continue</string>
+    <string name="prefs_plugged">Plugged only</string>
+    <string name="prefs_plugged_summary">Stop backup if not plugged to power</string>
+    <string name="prefs_quiet">Quiet notifications</string>
+    <string name="prefs_quiet_summary">The bar notifications do not beep</string>
+    <string name="prefs_base">Base path</string>
+    <string name="prefs_base_summary">The path to be backup\'d</string>
+    
+    <string name="notification_servicerunning">0 Backup service running.</string>
+    <string name="notification_started">Backup started.</string>
+    <string name="notification_doing">Backup in progress</string>
+    <string name="notification_stopping">Stopping backup...</string>
+    <string name="notification_stopped">Backup stopped.</string>
+    <string name="notification_success">Backup successfully done.</string>
+    <string name="notification_successwerrors">Backup done (with errors).</string>
+    <string name="notification_error">Backup aborted by an error</string>
+    <string name="notification_unpluggedStop">Unplugged. Stopping.</string>
+    <string name="notification_unpluggedContinue">Unplugged. Are you sure?</string>
+    <string name="notification_destroyed">Service destroyed. Uncomplete backup.</string>
+    <string name="notification_server">Server not configured. Canceled.</string>
+    <string name="notification_nosmb"> not available. Canceled.</string>
+    <string name="notification_nosd">SD card not available. Canceled.</string>
+    <string name="notification_errors">Error: </string>
+    <string name="notification_maxerrors">More errors exist...</string>
+    <string name="notification_exclude">Excluded: </string>
+    <string name="notification_noplugged">Unplugged. Delaying backup.</string>
+
+    <string name="status_never">Backup has never been completed.</string>
+    <string name="status_last">Last completed backup: </string>
+
+    <string name="server_doc">Fill in data (*: mandatory), click on \'Browser server\', choose folder and click \'Done\'.\nFind the full manual at http://www.0droid.com/0backup</string>
+    <string name="server_serverL">Backup SMB server (*):</string>
+    <string name="server_userL">Backup user:</string>
+    <string name="server_domainL">Domain (if needed):</string>
+    <string name="server_passwordL">Password:</string>
+    <string name="server_browseServer">Browse server</string>
+    <string name="server_pathL">Destination folder:</string>
+    <string name="server_done">Done</string>
+    
+    <string name="server_wait">Browsing...</string>
+    <string name="server_mandatory">Server is mandatory</string>
+    <string name="server_cannot">Cannot connect to </string>
+
+    <string name="exclude_doc">List of excluded directories. Click \'Browse\' to add directories to the exclusion list.\nFind the full manual at http://www.0droid.com/0backup</string>
+    <string name="exclude_done">Done</string>
+    <string name="exclude_browse">Browse</string>
+    <string name="exclude_include">Reinclude</string>
+    <string name="exclude_exclude">Exclude</string>
+</resources>
